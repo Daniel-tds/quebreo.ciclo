@@ -59,14 +59,14 @@ function Navigation() {
                             <Nav.Link as={NavLink} to="/" className="px-4 nav_link">
                                 Inicio
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/canais-denuncia" className="px-4 nav_link">
+                            <Nav.Link as={NavLink} to="/canais-de-denuncia" className="px-4 nav_link">
                                 Canais de Denúncia
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/nao-tenha-medo" className="px-4 nav_link">
-                                Não Tenha Medo
+                            <Nav.Link as={NavLink} to="/apos-a-denuncia" className="px-4 nav_link">
+                                Após a Denúncia
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/sobre" className="px-4 nav_link">
-                                Sobre
+                            <Nav.Link as={NavLink} to="/apoio-e-direitos" className="px-4 nav_link">
+                                Apoio e Direitos
                             </Nav.Link>
                         </Nav>
                         <a href={"tel:180"} target="_blank" className="btnDenuncia">
