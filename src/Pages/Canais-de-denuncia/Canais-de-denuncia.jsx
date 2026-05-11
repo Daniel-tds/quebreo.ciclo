@@ -67,18 +67,6 @@ export default function CanaisDeDenuncia() {
                                         <p><strong>Atendimento:</strong> {canal.atendimento}</p>
                                         <p>{canal.descricao}</p>
                                         {canal.complemento && <p>{canal.complemento}</p>}
-
-                                        {canal.passos && (
-                                            <>
-                                                <p className="mt-3"><strong>Passo a passo ao comparecer:</strong></p>
-                                                <ul className="listaPasso">
-                                                    {canal.passos.map((passo, i) => (
-                                                        <li key={i}>{passo}</li>
-                                                    ))}
-                                                </ul>
-                                            </>
-                                        )}
-
                                         {canal.observacao && (
                                             <p className="observacao">{canal.observacao}</p>
                                         )}

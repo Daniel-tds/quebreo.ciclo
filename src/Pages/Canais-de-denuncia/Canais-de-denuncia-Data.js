@@ -32,20 +32,16 @@ export const canaisPresenciais = [
         atendimento: "segunda a sexta-feira, em horário comercial.",
         descricao: "Órgão da Polícia Civil especializado no atendimento de mulheres vítimas de violência doméstica. Pode-se registrar Boletim de Ocorrência, pedir Medida Protetiva de Urgência, iniciar investigação policial, encaminhar para exame de corpo de delito e solicitar medida protetiva.",
         complemento: null,
-        passos: [
-            "Informar que deseja registrar ocorrência por violência doméstica.",
-            "Relatar os fatos com o máximo de detalhes possível.",
-            "Apresentar documentos e provas, se houver (fotos, mensagens, áudios, testemunhas).",
-        ],
-        observacao: "Mesmo sem provas, a denúncia pode e deve ser feita. A palavra da vítima tem valor jurídico."
+        passos: null,
+        observacao: null
     },
     {
         titulo: "CRAM – Centro de Referência e Atendimento à Mulher",
         telefone: "(17) 98199-4002",
         endereco: "Rua Trinta, nº 564 – Centro – Barretos/SP",
         atendimento: "segunda a sexta-feira, em horário comercial.",
-        descricao: "Órgão municipal de acolhimento e apoio às mulheres em situação de violência.",
-        complemento: "Oferece atendimento psicológico, orientação jurídica, encaminhamento para assistência social, apoio emocional e acompanhamento do caso.",
+        descricao: "Órgão municipal de acolhimento e apoio às mulheres em situação de violência. Também oferece atendimento psicológico, orientação jurídica, encaminhamento para assistência social, apoio emocional e acompanhamento do caso.",
+        complemento: null,
         passos: null,
         observacao: null
     }
@@ -67,10 +63,5 @@ export const canaisDigitais = [
         titulo: "Aplicativo SOS Mulher",
         descricao: "Disponível para iOS e Android. Aplicativo gratuito que permite acionar a Polícia Militar de forma rápida por mulheres que possuem medida protetiva.",
         complemento: "Basta pressionar o botão por cinco segundos."
-    },
-    {
-        titulo: "Projeto Não se Cale",
-        descricao: "Protocolo de ações para espaços públicos e privados de lazer (restaurantes, bares, casas noturnas etc.) que visa detectar e combater situações de agressão sexual.",
-        complemento: null
     }
 ];
