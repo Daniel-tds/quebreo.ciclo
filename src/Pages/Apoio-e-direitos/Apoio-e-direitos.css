@@ -1,0 +1,120 @@
+/* DASHBOARD STYLES */
+.icon-dash-container {
+  background: #f3f0ff;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+.dash-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.dash-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #603fad;
+  background: white;
+  color: #603fad;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle.active {
+  background: #603fad;
+  color: white;
+  box-shadow: 0 0 15px rgba(96, 63, 173, 0.4);
+}
+
+.dash-content-panel {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 650px;
+  min-height: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  /* Alinhado à esquerda para os tópicos ficarem bons */
+}
+
+.dash-content-panel h4 {
+  color: #603fad;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.dash-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #555;
+}
+
+.dash-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.dash-extra {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #603fad;
+  text-align: center;
+}
+
+/* TABLET/DESKTOP DASHBOARD */
+@media (min-width: 768px) {
+  .dash-layout {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .dash-icons {
+    flex-direction: column;
+  }
+}
+
+/* ABAS TÉCNICAS */
+.custom-list-group .list-group-item {
+  border: none;
+  padding: 0.5rem;
+  font-weight: 600;
+  background-color: #F8F8F8;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+}
+
+.custom-list-group .list-group-item.active {
+  background-color: #603fad !important;
+  transform: translateX(8px);
+}
+
+.valor-destaque {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #27ae60;
+}
+
+.documentos-box {
+  background: #f3f0ff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #603fad;
+}
