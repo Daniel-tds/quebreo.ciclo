@@ -18,7 +18,7 @@ import {
 import { Container, Card } from 'react-bootstrap';
 
 
-export default function CicloSection() {
+export default function Inicio() {
     return (
         <>
 
@@ -29,7 +29,7 @@ export default function CicloSection() {
                     </h1>
                     <p>Você não está sozinha! Juntas somos mais fortes.</p>
 
-                <a href={"tel:180"} target="_blank" className="headerBtn">
+                <a href="tel:180" className="headerBtn">
                     Denuncie
                 </a>
                 </div>
@@ -73,8 +73,8 @@ export default function CicloSection() {
         <section className="estatisticasHome">
                 <Container>
                     <div className="estatisticasGrid">
-                        {estatisticas.map((item, index) => (
-                            <div className="estatisticaItem" key={index}>
+                        {estatisticas.map((item) => (
+                            <div className="estatisticaItem" key={item.numero}>
                                 <h3>{item.numero}</h3>
                                 <p>{item.legenda}</p>
                             </div>
@@ -94,8 +94,6 @@ export default function CicloSection() {
                     <Swiper
                         slidesPerView={4}
                         pagination={{ clickable: true }}
-                        lazy={true}
-                        preloadImages={false}
                         modules={[Pagination]}
                         breakpoints={{
                             0: { slidesPerView: 1 },
@@ -103,8 +101,8 @@ export default function CicloSection() {
                             992: { slidesPerView: 3, spaceBetween: 10 },
                             1200: { slidesPerView: 4, spaceBetween: 10 },
                         }}>
-                        {servicos.map((item, index) => (
-                            <SwiperSlide key={index}>
+                        {servicos.map((item) => (
+                            <SwiperSlide key={`${item.titulo}-${item.titulo2}`}>
                                 <Card className="tiposViolenciaCard">
                                     <Card.Body className="tiposViolenciaBody">
                                         <div className="tiposViolenciaContainer">
@@ -113,8 +111,8 @@ export default function CicloSection() {
                                                 <span className="titulo2">{item.titulo2}</span>
                                             </Card.Title>
                                             <div className="descCard">
-                                                {item.itens.map((desc, i) => (
-                                                    <p key={i}>• {desc}</p>
+                                                {item.itens.map((desc) => (
+                                                    <p key={desc}>• {desc}</p>
                                                 ))}
                                             </div>
                                         </div>
@@ -137,9 +135,9 @@ export default function CicloSection() {
                     </div>
 
                     <div className="gridCanais">
-                        {canaisApoio.map((canal, index) => (
+                        {canaisApoio.map((canal) => (
                             <Card
-                                key={index}
+                                key={canal.titulo}
                                 className={`cardCanal ${canal.destaque ? "destaqueCanal" : ""}`}
                             >
                                 <Card.Body>
@@ -160,7 +158,7 @@ export default function CicloSection() {
             </section>
 
 
-            <section className="secaoLeiPrincipal">
+            <section className="secaoLeiPrincipal" id="saibaMais">
                 <Container>
                     <div className="leiConteudo">
                         <h2>{leiPrincipal.titulo}</h2>

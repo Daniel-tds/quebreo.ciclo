@@ -1,7 +1,6 @@
 .headerSection
 {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding: clamp(4.5rem, 7vw, 5.75rem) 1rem clamp(2.5rem, 5vw, 3.25rem);
     display: flex;
 }
 .headerContainer
@@ -9,19 +8,25 @@
     max-width: min(73.75rem, 92vw);
     margin: 0 auto;
     display: grid;
+    gap: 0.85rem;
     text-align: center;
 }
 .headerContainer h1
 {
     font-weight: 800;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
     font-size: clamp(1.625rem, 3.8vw, 2.75rem);
     line-height: 1.1;
+    margin-bottom: 0;
+    text-wrap: balance;
 }
 .headerContainer p
 {
     font-size: clamp(0.890rem, 1.6vw, 1.125rem);
     line-height: 1.6;
+    color: #2f2a3d;
+    max-width: 780px;
+    margin: 0 auto;
 }
 .headerBtn
 {
@@ -33,19 +38,21 @@
     text-decoration: none;
     color: white;
     font-weight: 500;
-
+    box-shadow: 0 10px 22px rgba(96, 63, 173, 0.18);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 .headerBtn:hover
 {
     background-color: #371668;
-    transform: scale(1.01);
+    box-shadow: 0 12px 26px rgba(55, 22, 104, 0.22);
+    transform: translateY(-1px);
 }
 
 /* ========== MENSAGEM INICIAL ========== */
 .introLei
 {
     background: #f9f9fb;
-    padding: 60px 0;
+    padding: clamp(48px, 6vw, 68px) 0;
 }
 .introConteudo
 {
@@ -58,6 +65,7 @@
     color: #603fad;
     font-weight: 700;
     margin-bottom: 20px;
+    font-size: clamp(1.7rem, 3vw, 2.05rem);
 }
 .introConteudo p
 {
@@ -77,8 +85,12 @@
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    gap: 24px;
     text-align: center;
+}
+.estatisticaItem
+{
+    padding: 0.5rem;
 }
 .estatisticaItem h3
 {
@@ -86,6 +98,7 @@
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
+    line-height: 1.1;
 }
 .estatisticaItem p
 {
@@ -107,6 +120,9 @@
     text-align: center;
     font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.6;
+    color: #4b4558;
+    max-width: 780px;
+    margin: 0 auto 1.75rem;
 }
 .tiposViolenciaCard
 {
@@ -115,6 +131,13 @@
     border-radius: 2rem;
     border: 2px solid #603fad;
     background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 10px 26px rgba(96, 63, 173, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.tiposViolenciaCard:hover
+{
+    box-shadow: 0 14px 30px rgba(96, 63, 173, 0.13);
+    transform: translateY(-3px);
 }
 .tiposViolenciaBody
 {
@@ -134,7 +157,7 @@
 }
 .titleCard
 {
-    font-size: clamp(1rem, 8vw, 2rem);
+    font-size: clamp(1.35rem, 2.2vw, 1.9rem);
     font-weight: 500;
     margin-bottom: 2rem;
     line-height: 1.3;
@@ -197,7 +220,7 @@
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
+    gap: 24px;
 }
 .cardCanal
 {
@@ -205,6 +228,17 @@
     border-radius: 14px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     text-align: center;
+    height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cardCanal:hover
+{
+    box-shadow: 0 12px 28px rgba(96, 63, 173, 0.12);
+    transform: translateY(-3px);
+}
+.cardCanal .card-body
+{
+    padding: 1.35rem;
 }
 .cardCanal h5
 {
@@ -227,11 +261,14 @@
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .btnCanal:hover
 {
     background: #4b2f8a;
     color: #fff;
+    box-shadow: 0 10px 20px rgba(75, 47, 138, 0.18);
+    transform: translateY(-1px);
 }
 .destaqueCanal
 {
@@ -263,6 +300,7 @@
     color: #603fad;
     font-weight: 700;
     margin-bottom: 5px;
+    font-size: clamp(1.65rem, 3vw, 2rem);
 }
 .leiConteudo span
 {
@@ -284,11 +322,15 @@
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    box-shadow: 0 10px 22px rgba(96, 63, 173, 0.18);
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .btnLei:hover
 {
     background: #4b2f8a;
     color: #fff;
+    box-shadow: 0 12px 26px rgba(75, 47, 138, 0.2);
+    transform: translateY(-1px);
 }
 
 /* ================= SEÇAO finaL ================= */

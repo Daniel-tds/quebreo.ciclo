@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col, ListGroup, Tab, Card } from 'react-bootstrap';
 import './Apoio-e-direitos.css';
 
@@ -123,7 +123,8 @@ function ApoioEDireitos() {
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {dadosMecanismos.map((m, i) => (
                 <button
-                  key={i}
+                  key={m.t}
+                  type="button"
                   onClick={() => setMecanismoAtivo(i)}
                   style={{
                     width: '50px',

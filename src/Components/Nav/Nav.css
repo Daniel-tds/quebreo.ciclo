@@ -14,6 +14,16 @@
     padding: 0.3rem 0;
 }
 
+.Nav01 a
+{
+    transition: opacity 0.25s ease;
+}
+
+.Nav01 a:hover
+{
+    opacity: 0.86;
+}
+
 
 /* TOGGLE DE COLAPSE  */
 /* TOGGLE DE COLAPSE  */
@@ -41,15 +51,27 @@
 
 
 /* SEGUNDA NAV - PRINCIPAL */
+.navigation
+{
+    background-color: #F8F8F8;
+}
+
 .nav_link
 {
     font-size: 1rem;
     color: #543782 !important;
     font-weight: 500;
+    transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .nav_link:hover {
     color: #c5c4f3 !important;
+    transform: translateY(-1px);
+}
+
+.nav_link.active {
+    color: #603fad !important;
+    font-weight: 700;
 }
 
 .btnDenuncia {
@@ -60,12 +82,14 @@
     text-decoration: none;
     color: white;
     font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 10px 22px rgba(96, 63, 173, 0.18);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .btnDenuncia:hover {
     background-color: #371668;
-    transform: scale(1.01);
+    box-shadow: 0 12px 26px rgba(55, 22, 104, 0.22);
+    transform: translateY(-1px);
 }
 
 @media (max-width: 767px) {

@@ -11,6 +11,7 @@ import {Container, Nav, Navbar } from "react-bootstrap";
 
 function Navigation() {
     const [open, setOpen] = useState(false);
+
     return (
         <>
             <section>
@@ -22,12 +23,12 @@ function Navigation() {
                     </a>
 
                     {/* Link 197 */}
-                    <a href="tel:197" aria-label="Disque Denuncia 197">
+                    <a href="tel:197" aria-label="Disque Denúncia 197">
                         <span className="d-inline d-md-none">Ligue 197</span>
                         <span className="d-none d-md-inline">Disque Denúncia 197</span>
                     </a>
 
-                    <a href="#" aria-label="Atendimento gratuito vinte e quatro horas">
+                    <a href="tel:180" aria-label="Atendimento gratuito vinte e quatro horas">
                         <span className="d-inline d-md-none">Atend. 24h</span>
                         <span className="d-none d-md-inline">Atendimento 24h Gratuito</span>
                     </a>
@@ -40,16 +41,21 @@ function Navigation() {
                     <Navbar.Brand as={NavLink} to="/">
                         <img
                             src={logo}
-                            alt="Logo"
+                            alt="Quebre o Ciclo"
                             style={{ height: "4.5rem", width: "auto" }}
                             className="ms-4 ms-md-0"
                         />
                     </Navbar.Brand>
 
-                    <Navbar.Toggle onClick={() => setOpen(!open)} aria-controls="basic-navbar-nav" className="btn_toggle">
+                    <Navbar.Toggle
+                        onClick={() => setOpen((isOpen) => !isOpen)}
+                        aria-controls="basic-navbar-nav"
+                        aria-label={open ? "Fechar menu" : "Abrir menu"}
+                        className="btn_toggle"
+                    >
                         <img
                             src={open ? toggleFechar : toggleAbrir}
-                            alt="menu"
+                            alt={open ? "Fechar menu" : "Abrir menu"}
                             className="toggle-icon"
                         />
                     </Navbar.Toggle>
@@ -69,7 +75,7 @@ function Navigation() {
                                 Apoio e Direitos
                             </Nav.Link>
                         </Nav>
-                        <a href={"tel:180"} target="_blank" className="btnDenuncia">
+                        <a href="tel:180" className="btnDenuncia">
                             Denuncie
                         </a>
                 </Navbar.Collapse>

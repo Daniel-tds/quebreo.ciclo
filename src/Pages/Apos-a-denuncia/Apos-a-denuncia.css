@@ -14,7 +14,12 @@
     /* Garante que o conteúdo respeite a curva */
     background: #fff;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.04);
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accordion-item-custom:hover {
+    box-shadow: 0 12px 28px rgba(96, 63, 173, 0.10);
+    transform: translateY(-2px);
 }
 
 /* Cabeçalho / Botão de Clique */
@@ -25,6 +30,8 @@
     border-radius: 30px !important;
     /* Mantém redondo quando fechado */
     border: none !important;
+    padding: 1.1rem 1.3rem !important;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Estado Aberto (Header) */
@@ -42,6 +49,15 @@
     color: #555;
     line-height: 1.7;
     font-size: 1rem;
+}
+
+.accordion-extra {
+    background: #f3f0ff;
+    border-left: 4px solid #603fad;
+    border-radius: 12px;
+    color: #4a416f;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .accordion-button::after {

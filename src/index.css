@@ -6,7 +6,13 @@
     font-family: 'Poppins', sans-serif !important;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #F8F8F8;
+    color: #24212b;
+    text-rendering: optimizeLegibility;
 }

@@ -94,16 +94,30 @@
 /* ABAS TÉCNICAS */
 .custom-list-group .list-group-item {
   border: none;
-  padding: 0.5rem;
+  padding: 0.85rem 1rem;
   font-weight: 600;
   background-color: #F8F8F8;
   margin-bottom: 10px;
   border-radius: 10px !important;
+  color: #4a416f;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .custom-list-group .list-group-item.active {
   background-color: #603fad !important;
+  color: #fff !important;
+  box-shadow: 0 10px 22px rgba(96, 63, 173, 0.18);
   transform: translateX(8px);
+}
+
+.custom-list-group .list-group-item:not(.active):hover {
+  color: #603fad;
+  box-shadow: 0 8px 18px rgba(96, 63, 173, 0.08);
+}
+
+.content-area {
+  background: #fff;
+  line-height: 1.65;
 }
 
 .valor-destaque {
@@ -117,4 +131,6 @@
   padding: 20px;
   border-radius: 12px;
   border-left: 5px solid #603fad;
+  line-height: 1.6;
+  margin-top: 1rem;
 }

@@ -1,8 +1,7 @@
 /* ================= HEADER =================*/
 .headerSection
 {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding: clamp(4.5rem, 7vw, 5.75rem) 1rem clamp(2.5rem, 5vw, 3.25rem);
     display: flex;
 }
 .headerContainer
@@ -10,26 +9,32 @@
     max-width: min(73.75rem, 92vw);
     margin: 0 auto;
     display: grid;
+    gap: 0.85rem;
     text-align: center;
 }
 .headerContainer h1
 {
     font-weight: 800;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
     font-size: clamp(1.625rem, 3.8vw, 2.75rem);
     line-height: 1.1;
+    margin-bottom: 0;
+    text-wrap: balance;
 }
 .headerContainer p
 {
     font-size: clamp(0.890rem, 1.6vw, 1.125rem);
     line-height: 1.6;
+    color: #2f2a3d;
+    max-width: 780px;
+    margin: 0 auto;
 }
 
 /* ================= SEÇÃO FUNDO CLARO =================*/
 .introLei
 {
     background: #F8F8F8;
-    padding: 60px 0;
+    padding: clamp(48px, 6vw, 68px) 0;
 }
 
 .canaisApoio
@@ -43,6 +48,9 @@
     text-align: center;
     font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.6;
+    color: #4b4558;
+    max-width: 780px;
+    margin: 0 auto 1.75rem;
 }
 
 /* ================= GRID DOS CARDS =================*/
@@ -50,7 +58,7 @@
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
+    gap: 24px;
 }
 
 /* ================= CARD PADRÃO =================*/
@@ -60,6 +68,17 @@
     border-radius: 14px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     text-align: center;
+    height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cardCanal:hover
+{
+    box-shadow: 0 12px 28px rgba(96, 63, 173, 0.12);
+    transform: translateY(-3px);
+}
+.cardCanal .card-body
+{
+    padding: 1.35rem;
 }
 .cardCanal h5
 {
@@ -84,11 +103,14 @@
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .btnCanal:hover
 {
     background: #4b2f8a;
     color: #fff;
+    box-shadow: 0 10px 20px rgba(75, 47, 138, 0.18);
+    transform: translateY(-1px);
 }
 
 /* ================= CARD DESTAQUE =================*/

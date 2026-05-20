@@ -4,12 +4,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: clamp(2.5rem, 6vw, 4rem) 1rem;
 }
 .containerSVG h2
 {
     margin-bottom: 1.25rem;
     text-align: center;
-    font-size: clamp(1rem, 7vw, 2rem);
+    font-size: clamp(1.55rem, 4vw, 2rem);
+    line-height: 1.2;
+    text-wrap: balance;
 }
 .SVG {
     width: 100%;

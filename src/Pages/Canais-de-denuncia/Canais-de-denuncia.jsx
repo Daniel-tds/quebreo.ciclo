@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Card } from "react-bootstrap";
 import "./Canais-de-denuncia.css";
 import { canaisUrgencia, canaisPresenciais, canaisDigitais } from "./Canais-de-denuncia-Data.js";
@@ -25,14 +24,14 @@ export default function CanaisDeDenuncia() {
                     </div>
 
                     <div className="gridCanais">
-                        {canaisUrgencia.map((canal, index) => (
-                            <Card key={index} className="cardCanal destaqueCanal">
+                        {canaisUrgencia.map((canal) => (
+                            <Card key={canal.numero} className="cardCanal destaqueCanal">
                                 <Card.Body className="d-flex flex-column">
                                     <h5 className="numeroUrgencia">{canal.numero}</h5>
                                     <h5 className="tituloUrgencia">{canal.titulo}</h5>
                                     <div style={{ textAlign: "left", flexGrow: 1 }}>
-                                        {canal.itens.map((item, i) => (
-                                            <p key={i}>
+                                        {canal.itens.map((item) => (
+                                            <p key={`${item.rotulo ?? "item"}-${item.texto}`}>
                                                 {item.rotulo && <strong>{item.rotulo}: </strong>}
                                                 {item.texto}
                                             </p>
@@ -57,8 +56,8 @@ export default function CanaisDeDenuncia() {
                     </div>
 
                     <div className="gridCanais">
-                        {canaisPresenciais.map((canal, index) => (
-                            <Card key={index} className="cardCanal">
+                        {canaisPresenciais.map((canal) => (
+                            <Card key={canal.titulo} className="cardCanal">
                                 <Card.Body>
                                     <h5>{canal.titulo}</h5>
                                     <span className="infoSecundaria">{canal.telefone}</span>
@@ -90,8 +89,8 @@ export default function CanaisDeDenuncia() {
                     </div>
 
                     <div className="gridCanais">
-                        {canaisDigitais.map((canal, index) => (
-                            <Card key={index} className="cardCanal">
+                        {canaisDigitais.map((canal) => (
+                            <Card key={canal.titulo} className="cardCanal">
                                 <Card.Body>
                                     <h5>{canal.titulo}</h5>
                                     <div className="cardTexto">
