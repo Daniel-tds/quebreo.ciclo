@@ -29,7 +29,7 @@ export default function Inicio() {
                     </h1>
                     <p>Você não está sozinha! Juntas somos mais fortes.</p>
 
-                <a href="tel:180" className="headerBtn">
+                <a href="tel:180" className="headerBtn" aria-label="Denuncie ligando para o 180">
                     Denuncie
                 </a>
                 </div>
@@ -147,6 +147,7 @@ export default function Inicio() {
                                     <a
                                         href={canal.link}
                                         className="btnCanal"
+                                        aria-label={`${canal.titulo} - ${canal.contato}`}
                                     >
                                         {canal.contato}
                                     </a>
@@ -166,7 +167,7 @@ export default function Inicio() {
 
                         <p>{leiPrincipal.descricao}</p>
 
-                        <a href={leiPrincipal.link} className="btnLei">
+                        <a href={leiPrincipal.link} className="btnLei" aria-label="Saiba mais sobre Lei Maria da Penha">
                             Saiba mais
                         </a>
                     </div>

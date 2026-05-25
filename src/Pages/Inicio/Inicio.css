@@ -78,8 +78,7 @@
 .estatisticasHome
 {
     background: #603fad;
-    padding: 60px 0;
-    margin: 40px 0;
+    padding: clamp(3rem, 6vw, 4.25rem) 0;
 }
 .estatisticasGrid
 {
@@ -337,7 +336,7 @@
 
 .mensagemFinal {
     background: #f9f9fb;
-    padding: 70px 0;
+    padding: clamp(3rem, 6vw, 4.5rem) 0;
     text-align: center;
 }
 

@@ -18,19 +18,14 @@ function Navigation() {
                 <div className="d-flex justify-content-center Nav01 gap-4">
                     {/* Link 180 */}
                     <a href="tel:180" aria-label="Central de Atendimento à Mulher 180">
-                        <span className="d-inline d-md-none">Ligue 180</span> {/* texto mobile */}
-                        <span className="d-none d-md-inline">Central de Atendimento à Mulher 180</span> {/* texto desktop */}
+                        <span className="d-inline d-md-none">Ligue 180</span>
+                        <span className="d-none d-md-inline">Central de Atendimento à Mulher 180</span>
                     </a>
 
                     {/* Link 197 */}
                     <a href="tel:197" aria-label="Disque Denúncia 197">
                         <span className="d-inline d-md-none">Ligue 197</span>
                         <span className="d-none d-md-inline">Disque Denúncia 197</span>
-                    </a>
-
-                    <a href="tel:180" aria-label="Atendimento gratuito vinte e quatro horas">
-                        <span className="d-inline d-md-none">Atend. 24h</span>
-                        <span className="d-none d-md-inline">Atendimento 24h Gratuito</span>
                     </a>
                 </div>
             </section>

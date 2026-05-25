@@ -22,13 +22,13 @@ function Footer() {
 
                     <Col xs={12} md={7} lg={6} xl={5} className="d-flex flex-column justify-content-center gap-2 order-1 order-md-2 mb-3 mb-md-0">
                         <NavLink to="/canais-de-denuncia" className="footer-link">
-                            Canais de Denuncia
+                            Canais de Denúncia
                         </NavLink>
-                        <NavLink to="/" className="footer-link">
-                            Não Tenha Medo
+                        <NavLink to="/apoio-e-direitos" className="footer-link">
+                            Apoio e Direitos
                         </NavLink>
-                        <NavLink to="/" className="footer-link">
-                            Sobre
+                        <NavLink to="/apos-a-denuncia" className="footer-link">
+                            Após a Denúncia
                         </NavLink>
                     </Col>
 

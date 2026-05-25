@@ -37,7 +37,7 @@ export default function CanaisDeDenuncia() {
                                             </p>
                                         ))}
                                     </div>
-                                    <a href={canal.link} className="btnCanal mt-4">{canal.linkTexto}</a>
+                                    <a href={canal.link} className="btnCanal" aria-label={`${canal.titulo} - ${canal.linkTexto}`}>{canal.linkTexto}</a>
                                 </Card.Body>
                             </Card>
                         ))}

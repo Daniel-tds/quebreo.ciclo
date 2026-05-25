@@ -94,8 +94,9 @@ function AposADenuncia() {
             <a
               href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="headerBtn"
+              aria-label="Saiba mais sobre Lei Maria da Penha no site do Planalto"
             >
               Saiba Mais
             </a>

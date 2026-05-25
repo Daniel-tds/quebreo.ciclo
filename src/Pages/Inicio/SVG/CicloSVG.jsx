@@ -6,7 +6,7 @@ function CicloSVG() {
       <h2>Como a Violência Doméstica se Repete</h2>
       <div className="SVG">
                     <div className="desktop-svg">
-                        <svg width="100%" viewBox="0 0 680 580" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="100%" viewBox="0 0 680 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ciclo da violência doméstica com 4 fases: aumento de tensão, explosão, arrependimento e lua de mel. Romper o ciclo é possível ligando 180.">
                             <defs>
                                 <marker
                                     id="arrow"
@@ -79,7 +79,7 @@ function CicloSVG() {
 
 
                     <div className="mobile-svg">
-                        <svg width="100%" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="100%" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ciclo da violência doméstica com 4 fases: aumento de tensão, explosão, arrependimento e lua de mel. Romper o ciclo é possível ligando 180.">
 
                             <defs>
                                 <marker

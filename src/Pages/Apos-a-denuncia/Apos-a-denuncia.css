@@ -100,6 +100,6 @@
 .apos-denuncia-site .mensagemFinal,
 section.mensagemFinal {
     background-color: #F8F8F8;
-    /* Cor de exemplo: Roxo da marca */
-
+    padding: clamp(3rem, 6vw, 4.5rem) 0;
 }
+

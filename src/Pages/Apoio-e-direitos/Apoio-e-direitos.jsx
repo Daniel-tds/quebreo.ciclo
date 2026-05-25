@@ -171,7 +171,7 @@ function ApoioEDireitos() {
               <Card.Body>
                 <h5>CRAS / CREAS</h5>
                 <p>Inclusão em programas sociais e autonomia financeira.</p>
-                <a href="https://share.google/naIqiXLYWHiKTS6bV" target="_blank" rel="noreferrer" className="headerBtn" style={{ textDecoration: 'none', display: 'inline-block' }}>
+                <a href="https://share.google/naIqiXLYWHiKTS6bV" target="_blank" rel="noopener noreferrer" className="headerBtn" style={{ textDecoration: 'none', display: 'inline-block' }} aria-label="Acessar informações sobre CRAS e CREAS">
                   Clique aqui para acessar
                 </a>
               </Card.Body>
@@ -180,7 +180,7 @@ function ApoioEDireitos() {
               <Card.Body>
                 <h5>Casa da Mulher (Barretos)</h5>
                 <p>Acolhimento e capacitação profissional.</p>
-                <a href="https://share.google/PA0Dcg8uWVdoP5aHR" target="_blank" rel="noreferrer" className="headerBtn" style={{ textDecoration: 'none', display: 'inline-block' }}>
+                <a href="https://share.google/PA0Dcg8uWVdoP5aHR" target="_blank" rel="noopener noreferrer" className="headerBtn" style={{ textDecoration: 'none', display: 'inline-block' }} aria-label="Acessar informações sobre Casa da Mulher em Barretos">
                   Clique aqui para acessar
                 </a>
               </Card.Body>
@@ -189,7 +189,7 @@ function ApoioEDireitos() {
               <Card.Body>
                 <h5>UBS / CAPS</h5>
                 <p>Acompanhamento psicológico pelo SUS.</p>
-                <a href="https://share.google/QREV4DL3B6dJ8RkCD" target="_blank" rel="noreferrer" className="headerBtn" style={{ textDecoration: 'none', display: 'inline-block' }}>
+                <a href="https://share.google/QREV4DL3B6dJ8RkCD" target="_blank" rel="noopener noreferrer" className="headerBtn" style={{ textDecoration: 'none', display: 'inline-block' }} aria-label="Acessar informações sobre UBS e CAPS">
                   Clique aqui para acessar
                 </a>
               </Card.Body>
