@@ -1,3 +1,7 @@
+import BoletimOcorrencia   from "../../assets/Icon&logo/BoletimOcorrencia.jpeg";
+import logoSPMulher  from "../../assets/Icon&logo/mulher_segura.jpeg";
+import logoSOSMulher from "../../assets/Icon&logo/sos_mulher.jpeg";
+
 // ── Canais de urgência e emergência (cards com destaque roxo) ──
 export const canaisUrgencia = [
     {
@@ -51,17 +55,23 @@ export const canaisPresenciais = [
 export const canaisDigitais = [
     {
         titulo: "Boletim de Ocorrência Online – SP",
+        logo: BoletimOcorrencia,
         descricao: "Sistema da Polícia Civil que permite registrar ocorrência pela internet. Indicado quando não se trata de emergência ou quando a vítima não puder se deslocar até a delegacia.",
+        link: "https://delegaciadigital.policia-civil.sp.gov.br/pagina-inicial",
         complemento: "A delegacia responsável pode entrar em contato posteriormente. Também é possível solicitar medidas protetivas."
     },
     {
         titulo: "Aplicativo SP Mulher Segura",
+        logo: logoSPMulher,
         descricao: "Disponível para iOS e Android. Aplicativo gratuito que permite registrar boletins de ocorrência online, possui botão do pânico que aciona imediatamente a Polícia Militar em emergências e facilita o acesso a serviços de proteção.",
+        link: "https://play.google.com/store/apps/details?id=br.gov.sp.ssp.spmulher&pcampaignid=web_share",
         complemento: null
     },
     {
         titulo: "Aplicativo SOS Mulher",
+        logo: logoSOSMulher,
         descricao: "Disponível para iOS e Android. Aplicativo gratuito que permite acionar a Polícia Militar de forma rápida por mulheres que possuem medida protetiva.",
+        link: "https://play.google.com/store/apps/details?id=pmesp.appemer.mp.android.medidasprotetivas&pcampaignid=web_share",
         complemento: "Basta pressionar o botão por cinco segundos."
     }
 ];

@@ -90,13 +90,33 @@ export default function CanaisDeDenuncia() {
 
                     <div className="gridCanais">
                         {canaisDigitais.map((canal) => (
-                            <Card key={canal.titulo} className="cardCanal">
-                                <Card.Body>
-                                    <h5>{canal.titulo}</h5>
-                                    <div className="cardTexto">
-                                        <p>{canal.descricao}</p>
-                                        {canal.complemento && <p>{canal.complemento}</p>}
+                            <Card key={canal.titulo} className="cardCanal cardDigital">
+                                <Card.Body className="d-flex flex-column">
+
+                                    <div className="cardDigitalTopo">
+                                        <div className="logoCanal" aria-label={`Logo ${canal.titulo}`}>
+                                            {canal.logo
+                                                ? <img src={canal.logo} alt={`Logo ${canal.titulo}`} />
+                                                : <span className="logoPlaceholder">LOGO</span>
+                                            }
+                                        </div>
+                                        <div className="cardDigitalInfo">
+                                            <h5>{canal.titulo}</h5>
+                                            <div className="cardTexto">
+                                                <p>{canal.descricao}</p>
+                                                {canal.complemento && <p>{canal.complemento}</p>}
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <a
+                                        href={canal.link ?? "#"}
+                                        className="btnCanal btnCanalDigital"
+                                        aria-label={`Acessar ${canal.titulo}`}
+                                    >
+                                        {canal.linkTexto ?? "Saiba mais"}
+                                    </a>
+
                                 </Card.Body>
                             </Card>
                         ))}
